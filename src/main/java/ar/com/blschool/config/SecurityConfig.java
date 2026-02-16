@@ -1,7 +1,7 @@
 package ar.com.blschool.config;
 
-import ar.com.blschool.security.jwt.JwtAuthenticationFilter;
-import ar.com.blschool.security.jwt.JwtTokenProvider;
+import ar.com.dserrano.common.security.jwt.JwtAuthenticationFilter;
+import ar.com.dserrano.common.security.jwt.JwtTokenProvider;
 import ar.com.blschool.service.CustomUserDetailsService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;

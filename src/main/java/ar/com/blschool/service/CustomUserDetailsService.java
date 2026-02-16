@@ -37,6 +37,11 @@ public class CustomUserDetailsService implements UserDetailsService {
                 .map(SimpleGrantedAuthority::new)
                 .collect(Collectors.toList());
 
+        // Agregar roles como authorities (prefijo ROLE_ para hasRole() de Spring Security)
+        u.getRoles().forEach(rol ->
+                authorities.add(new SimpleGrantedAuthority("ROLE_" + rol.getNombre().toUpperCase()))
+        );
+
         return User.withUsername(u.getUsername())
                 .password(u.getPassword())
                 .authorities(authorities)

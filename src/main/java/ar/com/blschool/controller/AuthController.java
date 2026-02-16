@@ -2,7 +2,7 @@ package ar.com.blschool.controller;
 
 import ar.com.blschool.dto.login.LoginRequest;
 import ar.com.blschool.dto.login.LoginResponse;
-import ar.com.blschool.security.jwt.JwtTokenProvider;
+import ar.com.dserrano.common.security.jwt.JwtTokenProvider;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
